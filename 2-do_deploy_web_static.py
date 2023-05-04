@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 """Compress web static package
 """
 from fabric.api import *
@@ -8,7 +9,7 @@ from os import path
 
 env.hosts = ['54.90.43.33', '54.157.150.240']
 env.user = 'ubuntu'
-env.key_filename = '~/.ssh/id_rsa'
+env.key_filename = '$HOME/.ssh/id_rsa'
 
 
 def do_deploy(archive_path):
@@ -54,3 +55,4 @@ web_static_{}/ /data/web_static/current'.format(timestamp))
 
         # return True on success
         return True
+
