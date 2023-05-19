@@ -1,13 +1,14 @@
 #!/usr/bin/python3
+"""flask class"""
 from flask import Flask
-"""class Flask"""
+"""Flask class"""
 
 
 app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def hello_hbnb():
+def helo_hbnb():
     """displays text
     Returns:
         text
@@ -16,7 +17,7 @@ def hello_hbnb():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def display_hbnb():
+def disp_hbnb():
     """displays text
     Returns:
         text
