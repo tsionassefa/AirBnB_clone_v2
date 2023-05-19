@@ -26,7 +26,7 @@ def disp_hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def disp_text(text):
+def disp_C(text):
     """displays text
     Args:
         text (str): text
@@ -37,8 +37,9 @@ def disp_text(text):
 
 
 @app.route('/python', defaults={'text': 'is cool'}, strict_slashes=False)
-@app.route('/python/(<text>', strict_slashes=False)
-def disp_text(text):
+@app.route('/python/', defaults={'text': 'is cool'}, strict_slashes=False)
+@app.route('/python/<text>', strict_slashes=False)
+def disp_python(text):
     """displays text
     Args:
         text (str): text
