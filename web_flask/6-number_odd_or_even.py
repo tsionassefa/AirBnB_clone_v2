@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""import flask"""
+""" flask class"""
 from flask import Flask, render_template
 """import class Flask, render_template method"""
 
@@ -72,7 +72,7 @@ def disp_HTML(n):
 
 
 @app.route('/number_odd_or_even/<int:n>', strict_slashes=False)
-def disp_odd_even(n):
+def display_odd_even(n):
     """displays text
     Args:
         n (int): number
@@ -87,4 +87,4 @@ def disp_odd_even(n):
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)i
+    app.run(host='0.0.0.0', port=5000)
