@@ -1,10 +1,19 @@
+#!/usr/bin/python3
+"""flask class"""
 from flask import Flask
+"""flask class"""
+
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
+
+@app.route('/', strict_slashes=False)
+def hel_hbnb():
+    """display message
+    return the text
+    """
     return 'Hello HBNB!'
+
     
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=5000)
