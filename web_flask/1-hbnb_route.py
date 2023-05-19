@@ -16,7 +16,7 @@ def helo_hbnb():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def disp_hbnb():
+def display_hbnb():
     """displays text
     Returns:
         text
