@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 from flask import Flask
-"""Flask class"""
+"""class Flask"""
 
 
 app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def helo_hbnb():
-    """displays message
+def hello_hbnb():
+    """displays text
     Returns:
-        message
+        text
     """
     return "Hello HBNB!"
 
